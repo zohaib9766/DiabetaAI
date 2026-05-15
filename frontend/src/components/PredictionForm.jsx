@@ -47,9 +47,22 @@ const PredictionForm = () => {
       ...prev,
       [name]: value
     }));
-    if (errors[name]) {
+    
+    if (name === 'BMI') {
+      if (value === "") {
+        setErrors(prev => ({ ...prev, BMI: "BMI is required" }));
+      } else {
+        const bmiValue = parseFloat(value);
+        if (isNaN(bmiValue) || bmiValue < 10 || bmiValue > 80) {
+          setErrors(prev => ({ ...prev, BMI: "Please enter a valid BMI (10-80)" }));
+        } else {
+          setErrors(prev => ({ ...prev, BMI: null }));
+        }
+      }
+    } else if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: null }));
     }
+    
     setSubmitted(false);
     setResult(null);
   };
@@ -229,6 +242,7 @@ const PredictionForm = () => {
                       className={`form-input ${errors.BMI ? 'error-border' : ''}`} placeholder="e.g. 25.5" 
                       min="10" step="0.1"
                     />
+                    {errors.BMI && <span className="field-error">{errors.BMI}</span>}
                   </div>
                   <div className="input-group">
                     <label className="input-label">General Health</label>
@@ -293,7 +307,7 @@ const PredictionForm = () => {
             )}
             
             {currentStep < 2 ? (
-              <button type="button" className="nav-btn next-btn" onClick={handleNext}>
+              <button type="button" className="nav-btn next-btn" onClick={handleNext} disabled={Boolean(errors.BMI)}>
                 Next Step
               </button>
             ) : (
