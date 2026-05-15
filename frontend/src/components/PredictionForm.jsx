@@ -115,7 +115,7 @@ const PredictionForm = () => {
     };
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/predict', dataToSend, {
+      const response = await axios.post('https://diabetaai-production.up.railway.app/predict', dataToSend, {
         headers: { 'Content-Type': 'application/json' }
       });
       setResult(response.data);
