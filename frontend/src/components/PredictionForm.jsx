@@ -62,6 +62,12 @@ const PredictionForm = () => {
       if (formData[field] === "") {
         newErrors[field] = "This field is required";
         isValid = false;
+      } else if (field === 'BMI') {
+        const bmiValue = parseFloat(formData[field]);
+        if (isNaN(bmiValue) || bmiValue < 10 || bmiValue > 80) {
+          newErrors[field] = "Please enter a valid BMI (10-80)";
+          isValid = false;
+        }
       }
     });
     setErrors(prev => ({ ...prev, ...newErrors }));
