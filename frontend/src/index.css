@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+  --bg-color: #0a0a0f;
+  --card-bg: #12121a;
+  --accent-cyan: #00d4ff;
+  --accent-purple: #6c63ff;
+  --text-main: #ffffff;
+  --text-muted: #a0a0b0;
+  
+  --shadow-cyan: 0 0 15px rgba(0, 212, 255, 0.3);
+  --shadow-purple: 0 0 15px rgba(108, 99, 255, 0.3);
+  --shadow-red: 0 0 15px rgba(255, 87, 87, 0.4);
+  --shadow-green: 0 0 15px rgba(0, 255, 136, 0.4);
+  
+  --gradient-primary: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(18, 18, 26, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+code, .code-font {
+  font-family: 'Fira Code', monospace;
+}

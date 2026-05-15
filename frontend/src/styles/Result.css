@@ -1,0 +1,97 @@
+.result-container {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.result-card {
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.result-card.high-risk {
+  background: rgba(255, 87, 87, 0.05);
+  border: 1px solid rgba(255, 87, 87, 0.2);
+  box-shadow: var(--shadow-red);
+}
+
+.result-card.low-risk {
+  background: rgba(0, 255, 136, 0.05);
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  box-shadow: var(--shadow-green);
+}
+
+.result-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.high-risk .result-icon { color: #ff5757; }
+.low-risk .result-icon { color: #00ff88; }
+
+.result-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.high-risk .result-title { color: #ff5757; }
+.low-risk .result-title { color: #00ff88; }
+
+.result-prob {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: 'Fira Code', monospace;
+}
+
+.result-message {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.rec-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.rec-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.rec-icon {
+  font-size: 2rem;
+  color: var(--text-muted);
+}
+
+.high-risk .rec-icon { color: rgba(255, 87, 87, 0.8); }
+.low-risk .rec-icon { color: rgba(0, 255, 136, 0.8); }
+
+.rec-text {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .recommendations {
+    grid-template-columns: 1fr;
+  }
+}
