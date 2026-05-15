@@ -47,6 +47,9 @@ This tool is for educational purposes only.
 Not a substitute for professional medical advice.
 
 ## 👨💻 Developer
-Zohaib Khan
-GitHub: https://github.com/zohaib9766
-Portfolio: https://portfolio-website-lemon-seven-13.vercel.app
+**Zohaib Khan**
+
+- 📧 Email: zk795438@gmail.com
+- 💻 GitHub: https://github.com/zohaib9766
+- 🌐 Portfolio: https://portfolio-website-lemon-seven-13.vercel.app
+- 🔗 LinkedIn: https://linkedin.com/in/zohaib-khan00
