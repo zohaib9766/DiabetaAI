@@ -28,6 +28,18 @@ CDC BRFSS 2015 dataset with 253,680 real patient records.
 
 ## 🚀 Run Locally
 
+### ⚠️ Important Note for Local Setup:
+After cloning, update the API URL in frontend:
+
+Open this file:
+`frontend/src/components/PredictionForm.jsx`
+
+Find this URL:
+`https://diabetaai-production.up.railway.app/predict`
+
+Replace with your local backend URL:
+`http://127.0.0.1:5000/predict`
+
 ### Backend:
 ```bash
 cd backend
