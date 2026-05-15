@@ -25,6 +25,18 @@ if os.path.exists(feature_names_path):
 else:
     feature_names = None
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({
+        "name": "DiabetaAI API",
+        "description": "AI-powered Diabetes Risk Prediction",
+        "status": "running",
+        "endpoints": {
+            "health": "/health",
+            "predict": "/predict (POST)"
+        },
+        "frontend": "https://diabeta-ai.vercel.app" # Apna actual frontend link dalna mat bhoolna!
+    })
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify({"status": "ok"})
