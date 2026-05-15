@@ -29,14 +29,18 @@ CDC BRFSS 2015 dataset with 253,680 real patient records.
 ## 🚀 Run Locally
 
 ### Backend:
+```bash
 cd backend
 pip install -r requirements.txt
 py app.py
+```
 
 ### Frontend:
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 ## ⚠️ Disclaimer
 This tool is for educational purposes only. 
