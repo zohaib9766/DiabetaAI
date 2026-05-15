@@ -134,7 +134,7 @@ const PredictionForm = () => {
     };
 
     try {
-      const response = await axios.post('https://diabetaai-production.up.railway.app/predict', dataToSend, {
+      const response = await axios.post('https://zohaib0900-diabetaai-backend.hf.space/predict', dataToSend, {
         headers: { 'Content-Type': 'application/json' }
       });
       setResult(response.data);
