@@ -3,8 +3,8 @@
 AI-powered diabetes risk prediction web application.
 
 ## 🌐 Live Demo
-- Frontend: https://diabeta-ai.vercel.app
-- Backend API: https://zohaib0900-diabetaai-backend.hf.space
+- 🖥️ Frontend: https://diabeta-ai.vercel.app
+- ⚙️ Backend: https://zohaib0900-diabetaai-backend.hf.space
 
 ## 📊 About
 DiabetaAI predicts diabetes risk using Machine Learning trained on 
@@ -36,7 +36,7 @@ Open this file:
 `frontend/src/components/PredictionForm.jsx`
 
 Find this URL:
-`https://diabetaai-production.up.railway.app/predict`
+`https://zohaib0900-diabetaai-backend.hf.space/predict`
 
 Replace with your local backend URL:
 `http://127.0.0.1:5000/predict`
