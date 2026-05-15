@@ -4,6 +4,7 @@ AI-powered diabetes risk prediction web application.
 
 ## 🌐 Live Demo
 - Frontend: https://diabeta-ai.vercel.app
+- Backend API: https://zohaib0900-diabetaai-backend.hf.space
 
 ## 📊 About
 DiabetaAI predicts diabetes risk using Machine Learning trained on 
@@ -18,7 +19,7 @@ CDC BRFSS 2015 dataset with 253,680 real patient records.
 - Frontend: React.js, Vite, Framer Motion
 - Backend: Python, Flask, Flask-CORS
 - ML: Scikit-learn, GradientBoosting, Pandas, NumPy
-- Deployment: Vercel (Frontend), Railway (Backend)
+- Deployment: Vercel (Frontend), Hugging Face Spaces (Backend)
 
 ## 📋 Features
 - 7 key health indicators
